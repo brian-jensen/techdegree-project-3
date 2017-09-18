@@ -6,7 +6,144 @@ GENERAL PRESETS
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
 
 body {
-  font-family: 'Merriweather', serif;
+  color: #46bcde;
+  background-color: #404040;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: #282828;
+}
+
+main {
+  padding: 0 15px;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+legend, section h2 {
+  color: #7dd0e7;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+input {
+    line-height: 2rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+/**********************************
+HEADER
+***********************************/
+
+header {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #111;
+}
+
+h1 {
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: #52d273;
+  text-shadow: 1px 1px #282828;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+
+/**********************************
+INTRO HEADING
+***********************************/
+
+section {
+  padding: 15px 0 20px;
+  text-align: center;
+  border-bottom: 4px solid #e57254;
+}
+
+section h2 {
+  line-height: .90rem;
+}
+
+section p {
+  color: #3896b1;
+  font-size: .90rem
+}
+
+
+/**********************************
+MAIN FORM BODY
+***********************************/
+
+form {
+  margin-top: 4px;
+  padding-top: 25px;
+  border-top: 2px solid #e57254;
+}
+
+form h4 {
+  color: #7dd0e7;
+  font-weight: 200;
+}
+
+
+/**********************************
+CONTACT INFO FIELDSET
+***********************************/
+
+.contact-info {
+  margin-bottom: 25px;
+  padding-bottom: 35px;
+  border-bottom: 2px solid #e57254;
+}
+
+.contact-info label {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 0;
+  font-size: .90rem;
+}
+
+.contact-info legend {
+  margin-bottom: 5px;
+}
+
+.contact-info input {
+  width: 100%;
+}
+
+[placeholder="Required"] {
+  font-style: italic;
+  font-size: .75rem;
+  font-weight: 100;
+  text-align: right;
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  padding: 10px 15px 30px;
+  text-align: center;
 }
