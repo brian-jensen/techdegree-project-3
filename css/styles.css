@@ -11,8 +11,7 @@ html {
 }
 
 body {
-  color: #46bcde;
-  background-color: #404040;
+  margin: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
 }
@@ -20,7 +19,6 @@ body {
 .wrapper {
   max-width: 768px;
   margin: 0 auto;
-  background-color: #282828;
 }
 
 main {
@@ -34,20 +32,39 @@ fieldset {
 }
 
 legend, section h2 {
-  color: #7dd0e7;
+  color: #2d3945;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
-input {
-    line-height: 2rem;
-    padding: 5px 15px;
-    border-radius: 5px;
+select, button, textarea, .contact-info input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  color: #777;
+  border: none;
+  border-radius: 5px;
+  background-color: #eff0f1;
 }
 
-label:hover {
+textarea {
+  min-height: 100px;
+  margin-top: 20px;
+  resize: none;
+}
+
+button {
+  height: 60px;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #4ebbb5;
+  font-size: 1rem;
+}
+
+button, label:hover {
   cursor: pointer;
 }
+
 
 /**********************************
 HEADER
@@ -57,14 +74,12 @@ header {
   margin: 0;
   padding: 10px;
   text-align: center;
-  background-color: #111;
+  background-color: #2d3945;
 }
 
 h1 {
-  letter-spacing: 0.05rem;
   text-transform: uppercase;
-  color: #52d273;
-  text-shadow: 1px 1px #282828;
+  color: #fff;
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -77,16 +92,17 @@ INTRO HEADING
 section {
   padding: 15px 0 20px;
   text-align: center;
-  border-bottom: 4px solid #e57254;
+  border-bottom: 4px solid #2d3945;
 }
 
 section h2 {
   line-height: .90rem;
 }
 
-section p {
-  color: #3896b1;
-  font-size: .90rem
+section p, footer {
+  color: #aaafb4;
+  font-size: .90rem;
+  font-weight: 200;
 }
 
 
@@ -97,12 +113,12 @@ MAIN FORM BODY
 form {
   margin-top: 4px;
   padding-top: 25px;
-  border-top: 2px solid #e57254;
+  border-top: 2px solid #2d3945;
 }
 
 form h4 {
-  color: #7dd0e7;
-  font-weight: 200;
+  color: #495d70;
+  font-weight: 400;
 }
 
 
@@ -113,7 +129,7 @@ CONTACT INFO FIELDSET
 .contact-info {
   margin-bottom: 25px;
   padding-bottom: 35px;
-  border-bottom: 2px solid #e57254;
+  border-bottom: 2px solid #2d3945;
 }
 
 .contact-info label {
@@ -127,15 +143,22 @@ CONTACT INFO FIELDSET
   margin-bottom: 5px;
 }
 
-.contact-info input {
-  width: 100%;
-}
-
-[placeholder="Required"] {
-  font-style: italic;
+input::placeholder {
   font-size: .75rem;
   font-weight: 100;
+  font-style: italic;
+}
+
+input[placeholder="Required"]::placeholder {
   text-align: right;
+}
+
+label {
+  color: #495d70;
+}
+
+input[name="zip"] {
+  width: 50%;
 }
 
 
