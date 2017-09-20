@@ -23,6 +23,7 @@ body {
 
 main {
   padding: 0 15px;
+  background-color: #fafcff;
 }
 
 fieldset {
@@ -39,12 +40,14 @@ legend, section h2 {
 
 select, button, textarea, .contact-info input {
   width: 100%;
-  height: 50px;
+  height: 48px;
   padding: 15px;
   color: #777;
   border: none;
   border-radius: 5px;
   background-color: #eff0f1;
+  font-size: .9rem;
+  font-weight: 100;
 }
 
 textarea {
@@ -63,6 +66,14 @@ button {
 
 button, label:hover {
   cursor: pointer;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 
@@ -111,13 +122,14 @@ MAIN FORM BODY
 ***********************************/
 
 form {
-  margin-top: 4px;
+  margin-top: 3px;
   padding-top: 25px;
   border-top: 2px solid #2d3945;
 }
 
 form h4 {
   color: #495d70;
+  font-size: .9rem;
   font-weight: 400;
 }
 
@@ -127,7 +139,6 @@ CONTACT INFO FIELDSET
 ***********************************/
 
 .contact-info {
-  margin-bottom: 25px;
   padding-bottom: 35px;
   border-bottom: 2px solid #2d3945;
 }
@@ -143,7 +154,12 @@ CONTACT INFO FIELDSET
   margin-bottom: 5px;
 }
 
-input::placeholder {
+.newsletter {
+  margin-top: 25px;
+  padding-bottom: 30px;
+}
+
+input::placeholder, textarea::placeholder {
   font-size: .75rem;
   font-weight: 100;
   font-style: italic;
@@ -161,12 +177,18 @@ input[name="zip"] {
   width: 50%;
 }
 
+input[type="checkbox"], input[type="radio"] {
+  position: relative;
+  top: -2px;
+  margin: 0 10px 15px 0;
+}
+
 
 /**********************************
 FOOTER
 ***********************************/
 
 footer {
-  padding: 10px 15px 30px;
+  padding: 0 15px 30px;
   text-align: center;
 }
