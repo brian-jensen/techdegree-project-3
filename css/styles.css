@@ -1,5 +1,5 @@
 /**********************************
-GENERAL PRESETS
+GENERAL PRESETS GROUPS
 ***********************************/
 
 * {
@@ -11,9 +11,13 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: 'Raleway', sans-serif;
+  font-size: .9rem;
   font-weight: 200;
+}
+
+body, header, fieldset {
+  margin: 0;
 }
 
 .wrapper {
@@ -21,54 +25,24 @@ body {
   margin: 0 auto;
 }
 
-main {
-  padding: 0 15px;
-  background-color: #fafcff;
+header, section, footer {
+  text-align: center;
 }
 
-fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-legend, section h2 {
-  color: #2d3945;
+h1, section h2, legend {
   font-size: 1.25rem;
   font-weight: 500;
 }
 
-select, button, textarea, .contact-info input {
-  width: 100%;
-  height: 48px;
-  padding: 15px;
-  color: #777;
-  border: none;
-  border-radius: 5px;
-  background-color: #eff0f1;
-  font-size: .9rem;
-  font-weight: 100;
+h1, button {
+  color: #fff !important;
 }
 
-textarea {
-  min-height: 100px;
-  margin-top: 20px;
-  resize: none;
+form h4, label {
+  color: #495d70;
 }
 
-button {
-  height: 60px;
-  margin-top: 30px;
-  color: #fff;
-  background-color: #4ebbb5;
-  font-size: 1rem;
-}
-
-button, label:hover {
-  cursor: pointer;
-}
-
-ul {
+fieldset, ul {
   padding: 0;
 }
 
@@ -76,87 +50,37 @@ li {
   list-style: none;
 }
 
-
-/**********************************
-HEADER
-***********************************/
-
-header {
-  margin: 0;
-  padding: 10px;
-  text-align: center;
-  background-color: #2d3945;
+button, label:hover {
+  cursor: pointer;
 }
 
-h1 {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 500;
+.contact-info, .newsletter {
+  padding-bottom: 30px;
 }
 
-
-/**********************************
-INTRO HEADING
-***********************************/
-
-section {
-  padding: 15px 0 20px;
-  text-align: center;
-  border-bottom: 4px solid #2d3945;
+select, button, textarea, .contact-info input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  color: #777;
+  border: none;
+  border-radius: 5px;
+  background-color: #eff0f1;
+  font-size: 1rem;
 }
 
-section h2 {
-  line-height: .90rem;
+legend, section h2 {
+  color: #2d3945;
 }
 
 section p, footer {
   color: #aaafb4;
-  font-size: .90rem;
-  font-weight: 200;
 }
 
-
-/**********************************
-MAIN FORM BODY
-***********************************/
-
-form {
-  margin-top: 3px;
-  padding-top: 25px;
-  border-top: 2px solid #2d3945;
-}
-
-form h4 {
-  color: #495d70;
-  font-size: .9rem;
-  font-weight: 400;
-}
-
-
-/**********************************
-CONTACT INFO FIELDSET
-***********************************/
-
-.contact-info {
-  padding-bottom: 35px;
-  border-bottom: 2px solid #2d3945;
-}
-
-.contact-info label {
-  display: block;
-  margin-top: 10px;
-  padding: 10px 0;
-  font-size: .90rem;
-}
-
-.contact-info legend {
-  margin-bottom: 5px;
-}
-
-.newsletter {
-  margin-top: 25px;
-  padding-bottom: 30px;
+input[type="checkbox"], input[type="radio"] {
+  position: relative;
+  top: -2px;
+  margin: 0 10px 15px 0;
 }
 
 input::placeholder, textarea::placeholder {
@@ -169,18 +93,106 @@ input[placeholder="Required"]::placeholder {
   text-align: right;
 }
 
-label {
-  color: #495d70;
+
+/**********************************
+HEADER
+***********************************/
+
+header {
+  padding: 10px;
+  background-color: #2d3945;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+
+/**********************************
+INTRO HEADING
+***********************************/
+
+main {
+  padding: 0 15px;
+  background-color: #fafcff;
+}
+
+section {
+  padding: 15px 0 20px;
+  border-bottom: 4px solid #2d3945;
+}
+
+section h2 {
+  line-height: .9rem;
+}
+
+
+/**********************************
+MAIN FORM ELEMENTS
+***********************************/
+
+form {
+  margin-top: 3px;
+  padding-top: 25px;
+  border-top: 2px solid #2d3945;
+}
+
+fieldset {
+  border: 0;
+}
+
+form h4 {
+  font-weight: 300;
+}
+
+select {
+  font-size: .75rem !important;
+  font-weight: 100 !important;
+}
+
+textarea {
+  min-height: 100px;
+  margin-top: 20px;
+  resize: none;
+}
+
+button {
+  height: 60px;
+  margin-top: 30px;
+  background-color: #4ebbb5;
+  font-size: 1rem;
+}
+
+
+/**********************************
+CONTACT INFO FIELDSET
+***********************************/
+
+.contact-info legend {
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  border-bottom: 2px solid #2d3945;
+}
+
+.contact-info label {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 0;
 }
 
 input[name="zip"] {
   width: 50%;
 }
 
-input[type="checkbox"], input[type="radio"] {
-  position: relative;
-  top: -2px;
-  margin: 0 10px 15px 0;
+
+/**********************************
+NEWSLETTER FIELDSET
+***********************************/
+
+.newsletter {
+  margin-top: 25px;
 }
 
 
@@ -190,5 +202,4 @@ FOOTER
 
 footer {
   padding: 0 15px 30px;
-  text-align: center;
 }
