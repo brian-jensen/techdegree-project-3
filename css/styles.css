@@ -1,5 +1,5 @@
 /**********************************
-GENERAL PRESETS GROUPS
+GENERAL PRESETS & GROUPS
 ***********************************/
 
 * {
@@ -83,7 +83,7 @@ input[type="checkbox"], input[type="radio"] {
   margin: 0 10px 15px 0;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder, textarea::placeholder, footer p {
   font-size: .75rem;
   font-weight: 100;
   font-style: italic;
@@ -154,6 +154,18 @@ textarea {
   min-height: 100px;
   margin-top: 20px;
   resize: none;
+  transition: min-height .8s;
+}
+
+input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(45, 57, 69, .5);
+  font-weight: 200;
+}
+
+textarea:focus {
+  min-height: 200px;
+  transition: min-height 1s;
 }
 
 button {
@@ -195,11 +207,29 @@ NEWSLETTER FIELDSET
   margin-top: 25px;
 }
 
-
 /**********************************
-FOOTER
+TABLET VIEW MEDIA QUERIES
 ***********************************/
 
-footer {
-  padding: 0 15px 30px;
+@media (min-width: 768px) {
+  main {
+    padding: 0 84px;
+  }
+  .contact-info li {
+    display: flex;
+    margin: 20px 0;
+  }
+  .contact-info label {
+    margin: auto 0;
+    flex-basis: 35%;
+  }
+  .contact-info input[name="zip"] {
+    width: 25%;
+  }
+  .contact-info label[for="zip"] {
+    flex-basis: 25.5%;
+  }
+  .newsletter {
+    margin-top: 50px;
+  }
 }
