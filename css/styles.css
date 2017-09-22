@@ -158,6 +158,7 @@ textarea {
 }
 
 input:focus {
+  transition: background-color .6s, box-shadow .4s;
   background-color: #fff;
   box-shadow: 0 0 4px rgba(45, 57, 69, .5);
   font-weight: 200;
@@ -165,7 +166,9 @@ input:focus {
 
 textarea:focus {
   min-height: 200px;
-  transition: min-height 1s;
+  transition: min-height 1s, background-color .6s, box-shadow .4s;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(45, 57, 69, .5);
 }
 
 button {
@@ -207,6 +210,7 @@ NEWSLETTER FIELDSET
   margin-top: 25px;
 }
 
+
 /**********************************
 TABLET VIEW MEDIA QUERIES
 ***********************************/
@@ -220,8 +224,8 @@ TABLET VIEW MEDIA QUERIES
     margin: 20px 0;
   }
   .contact-info label {
-    margin: auto 0;
     flex-basis: 35%;
+    margin: auto 0;
   }
   .contact-info input[name="zip"] {
     width: 25%;
